@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Plantilla Bootstrap</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100 ">
     <header>
       <nav class="navbar bg-primary navbar-expand-lg">
         <div class="container">
@@ -44,31 +44,37 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="flex-grow-1">
       <section class="container justify-content-center">
         <h1 class="my-4 mx-2">Formulario Contacto</h1>
-        <div class="container border border-secondary-subtle rounded-3 p-4 mb-3">
+        <div
+          class="container border border-secondary-subtle rounded-3 p-4 mb-3"
+        >
           <form>
-            <div class="mb-3">
-              <label for="textInput" class="form-label">Nombre</label>
-              <input
-                type="text"
-                id="textInupt"
-                class="form-control"
-                placeholder="Ej: Juan"
-              />
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="textInput" class="form-label fw-bold">Nombre</label>
+                <input
+                  type="text"
+                  id="textInupt"
+                  class="form-control"
+                  placeholder="Ej: Juan"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="exampleInputEmail1" class="form-label fw-bold"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="test@ejemplo.com"
+                />
+              </div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                placeholder="test@ejemplo.com"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="FormControlTextArea" class="form-label"
+              <label for="FormControlTextArea" class="form-label fw-bold"
                 >Mensaje</label
               >
               <textarea
@@ -88,7 +94,7 @@
                 >Aceptár terminos</label
               >
             </div>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-primary px-5" type="submit">Enviar</button>
           </form>
         </div>
       </section>
