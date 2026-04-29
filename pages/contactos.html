@@ -45,24 +45,52 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Ejemplo Formulario</h1>
-        <form>
-          <div class="mb-3"></div>
-            <label for="textInput" class="form-label">Nombre</label>
-            <input type="text" id="textInupt" class="form-control" placeholder="Ej: Juan">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email Address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              placeholder="test@ejemplo.com"
-            />
-          </div>
-        </form>
+      <section class="container justify-content-center">
+        <h1 class="my-4 mx-2">Formulario Contacto</h1>
+        <div class="container border border-secondary-subtle rounded-3 p-4 mb-3">
+          <form>
+            <div class="mb-3">
+              <label for="textInput" class="form-label">Nombre</label>
+              <input
+                type="text"
+                id="textInupt"
+                class="form-control"
+                placeholder="Ej: Juan"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="test@ejemplo.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="FormControlTextArea" class="form-label"
+                >Mensaje</label
+              >
+              <textarea
+                class="form-control"
+                id="FormControlTextArea"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="switchCheckDefault"
+              />
+              <label class="form-check-label mb-3" for="switchCheckDefault"
+                >Aceptár terminos</label
+              >
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
