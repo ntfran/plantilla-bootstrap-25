@@ -69,9 +69,9 @@
         </article>
       </section>
       <!-- Elementos de bootstrap -->
-      <section class="container my-4" id="elementosBoostrap">
+      <div class="container my-4" id="elementosBoostrap">
         <!-- Estilos de texto y tipografía -->
-        <article class="border-bottom pb-4" id="estilos-Typografía">
+        <section class="border-bottom pb-4" id="estilos-Typografía">
           <div class="d-flex flex-column flex-md-row">
             <div class="w-100">
               <h1>1. Estilos de Texto y tipografía</h1>
@@ -101,7 +101,7 @@
               </div>
             </div>
           </div>
-        </article>
+        </section>
         <!-- Utilidades de CSS -->
         <section class="my-4" id="utilidadesCSS">
           <h2 class="mb-4">
@@ -109,7 +109,7 @@
           </h2>
           <div class="d-flex flex-column flex-md-row w-100 gap-2">
             <!-- Bordes y Sombras -->
-            <article class="my-4 flex-grow-1" id="bordes-sombras">
+            <article class="my-4 flex-grow-1">
               <h3>Bordes y Sombras</h3>
               <div
                 class="bg-secondary p-5 d-flex flex-column flex-md-row justify-content-md-start"
@@ -136,7 +136,7 @@
               </div>
             </article>
             <!-- Opacidad -->
-            <article class="opacidad my-4" id="opacidad">
+            <article class="opacidad my-4">
               <h3>Opacidad</h3>
               <div>
                 <div class="bg-primary p-2 mb-1 opacity-100">Opacidad 100%</div>
@@ -147,37 +147,23 @@
               </div>
             </article>
           </div>
-          <article class="my-4" id="espaciado">
-            <h3>Espaciado (Margenes y Rellenos)</h3>
-            <p class="light small">
-              Clases: <span class="color-rosa">m-*</span> (margin) y
-              <span class="color-rosa">p-*</span> (padding). De 0 a 5.
-            </p>
-            <div class="border border-secondary rounded-2 p-4">
-              <!-- Padding -->
-              <div class="d-flex gap-3 align-items-end mb-4 pb-4 border-bottom">
-                <div class="bg-primary text-center p-1">p-1</div>
-                <div class="bg-primary text-center p-3">p-3</div>
-                <div class="bg-primary text-center p-5">p-5</div>
-              </div>
-
-              <!-- Margin -->
-              <div class="d-flex flex-column flex-md-row gap-2">
-                <div
-                  class="bg-secondary text-center px-3 py-2 align-self-start"
-                >
-                  Sin Margen Extra
-                </div>
-                <div
-                  class="bg-danger text-center px-3 py-2 ms-md-5 align-self-start"
-                >
-                  ms-md-5 (Margen condicional)
-                </div>
-              </div>
-            </div>
-          </article>
         </section>
-      </section>
+        <!-- Botones y Estados -->
+        <section class="border-bottom pb-4 my-4" id="botones-estados">
+          <h2>3. Botones y Estados</h2>
+          <div class="my-3">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-outline-primary">Outline</button>
+            <button class="btn btn-primary" disabled>Deshabilitado</button>
+          </div>
+          <div class="my-3">
+            <button class="btn btn-success btn-lg">Grande</button>
+            <button class="btn btn-warning">Normal</button>
+            <button class="btn btn-danger btn-sm">Pequeño</button>
+            <button class="btn btn-link">Enlace</button>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
       <p>&copy;Todos los derechos reservados 2026</p>
@@ -189,3 +175,4 @@
     ></script>
   </body>
 </html>
+ 
