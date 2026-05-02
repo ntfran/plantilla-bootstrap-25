@@ -69,9 +69,9 @@
         </article>
       </section>
       <!-- Elementos de bootstrap -->
-      <section class="container my-4">
+      <section class="container my-4" id="elementosBoostrap">
         <!-- Estilos de texto y tipografía -->
-        <article class="border-bottom pb-4">
+        <article class="border-bottom pb-4" id="estilos-Typografía">
           <div class="d-flex flex-column flex-md-row">
             <div class="w-100">
               <h1>1. Estilos de Texto y tipografía</h1>
@@ -102,36 +102,52 @@
             </div>
           </div>
         </article>
-        <article class="container my-4">
+        <!-- Utilidades de CSS -->
+        <section class="my-4" id="utilidadesCSS">
           <h2 class="mb-4">
             2. Utilidades de CSS (Bordes, Sombras y Espacios)
           </h2>
-          <!-- Bordes y Sombras -->
-          <h3>Bordes y Sombras</h3>
-          <div
-            class="container bg-secondary p-5 d-flex flex-column flex-md-row justify-content-md-start"
-          >
-            <div class="d-flex">
-              <p
-                class="fw-light text-center align-content-center border border-3 border-primary bg-primary-subtle p-3 shadow-sm d-flex flex-column rounded-2 w-75"
-              >
-                Sombra Pequeña
-              </p>
-            </div>
-            <div class="d-flex gap-4 flex-md-row">
-              <p
-                class="fw-light text-center align-content-center border border-primary bg-primary-subtle pt-2 pb-5 px-3 border-start-0 border-2 border-success shadow w-50"
-              >
-                Sombra Media
-              </p>
+          <div class="d-flex flex-column flex-md-row w-100 gap-2">
+            <!-- Bordes y Sombras -->
+            <article class="my-4 flex-grow-1">
+              <h3>Bordes y Sombras</h3>
               <div
-                class="fw-light circulo-sombra bg-primary-subtle rounded-circle shadow-lg text-center align-content-center"
+                class="bg-secondary p-5 d-flex flex-column flex-md-row justify-content-md-start"
               >
-                Sombra Grande
+                <div class="d-flex">
+                  <p
+                    class="fw-light text-center align-content-center border border-3 border-primary bg-primary-subtle p-3 shadow-sm d-flex flex-column rounded-2 w-75"
+                  >
+                    Sombra Pequeña
+                  </p>
+                </div>
+                <div class="d-flex gap-4 flex-md-row">
+                  <p
+                    class="fw-light text-center align-content-center border border-primary bg-primary-subtle pt-2 pb-5 px-3 border-start-0 border-2 border-success rounded-2 w-50"
+                  >
+                    Sombra Media
+                  </p>
+                  <div
+                    class="fw-light circulo-sombra bg-primary-subtle rounded-circle shadow-lg text-center align-content-center"
+                  >
+                    Sombra Grande
+                  </div>
+                </div>
               </div>
-            </div>
+            </article>
+            <!-- Opacidad -->
+            <article class="opacidad my-4">
+              <h3>Opacidad</h3>
+              <div>
+                <div class="bg-primary p-2 mb-1 opacity-100">Opacidad 100%</div>
+                <div class="bg-primary p-2 mb-1 opacity-75">Opacidad 75%</div>
+                <div class="bg-primary p-2 mb-1 opacity-50">Opacidad 50%</div>
+                <div class="bg-primary p-2 mb-1 opacity-25">Opacidad 25%</div>
+                <div class="bg-primary p-2 mb-1 opacity-0">Opacidad 0%</div>
+              </div>
+            </article>
           </div>
-        </article>
+        </section>
       </section>
     </main>
     <footer class="text-center bg-dark-subtle py-3">

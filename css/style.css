@@ -12,3 +12,8 @@ main{
     width: 100px;
     height: 100px;
 }
+
+.opacidad{
+    max-width: 500px;
+    min-width: 300px;
+}
