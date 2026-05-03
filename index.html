@@ -163,6 +163,60 @@
             <button class="btn btn-link">Enlace</button>
           </div>
         </section>
+        <section class="border-bottom pb-4 my-4" id="tarjetas-cards">
+          <h2>4. Tarjetas (Cards) con Flexbox</h2>
+          <div class="d-flex flex-column flex-md-row gap-3 shadow-lg">
+            <div class="card card-p">
+              <div class="card-header bg-primary">Header</div>
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="Montaña"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Título Estilizado</h5>
+                <p class="card-text text-light">
+                  Maquetado con Flexbox puro de Bootstrap.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-dark">Acción</a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 card-custom">
+              <div class="card-body">
+                <h5 class="card-title">Layout Flexible</h5>
+                <p class="card-text">
+                  Bootstrap permite combinar utilidades de flexbox para crear
+                  layouts complejos sin salir de las 12 columnas de la grilla.
+                </p>
+                <p class="card-text">
+                  En este caso creé mi propio estilo .flex-1 y flex-2, usando
+                  las propiedades de flexbox en mi css
+                  <code>flex : 1 0 flex-1</code> y
+                  <code>flex : 1 0 flex-2</code>.
+                </p>
+                <div class="d-flex gap-2 mt-3 align-content-between">
+                  <span
+                    class="badge border border-1 rounded-2 p-3 d-flex justify-content-between flex-1"
+                    >Item de lista con Badge
+                    <span class="badge bg-primary rounded-pill">14</span></span
+                  >
+                </div>
+
+                <div class="d-flex gap-2 mt-2">
+                  <span
+                    class="badge border border-1 rounded-2 p-3 d-flex justify-content-between flex-2"
+                    >Notificaciones
+                    <span class="badge bg-danger rounded-pill"
+                      >Nuevo</span
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="text-center bg-dark-subtle py-3">
@@ -175,4 +229,3 @@
     ></script>
   </body>
 </html>
- 

@@ -21,3 +21,15 @@ main{
 .color-rosa{
     color:palevioletred
 }
+
+.card-p {
+    max-width: 350px;
+}
+
+.flex-1 {
+    flex: 1 0 auto;
+}
+
+.flex-2 {
+    flex: 2 0 auto;
+}
