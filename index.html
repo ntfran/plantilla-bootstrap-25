@@ -163,6 +163,7 @@
             <button class="btn btn-link">Enlace</button>
           </div>
         </section>
+        <!-- Maquetado con Flexbox -->
         <section class="border-bottom pb-4 my-4" id="tarjetas-cards">
           <h2>4. Tarjetas (Cards) con Flexbox</h2>
           <div class="d-flex flex-column flex-md-row gap-3 shadow-lg">
@@ -215,6 +216,102 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <!-- Tablas y feedback -->
+        <section class="pb-4 my-4" id="tablas-feedback">
+          <h2>5. Tablas y Feedback</h2>
+          <div class="d-flex flex-column flex-md-row gap-5">
+            <div class="" id="barraDeProgreso">
+            <p class="text-light">
+            Las tablas en bootstrap son responsive si usar la clase
+            .table-responsive, creando un scroll horizontal dentro de la tabla.
+          </p>
+          <div
+            class="alert alert-info d-flex justify-content-between align-items-center"
+            role="alert"
+          >
+            <div class="bg-info-subtle text-info">
+              <strong>¡Importante!</strong>
+              <p class="mb-0">
+                Dominar <code>d-flex</code>, <code>justify-content-*</code> y
+                <code>align-items-*</code> es clave en el desarrollo moderno.
+              </p>
+            </div>
+          </div>
+          <p class="mb-2">
+            A continuación tenemos una <strong>progress-bar</strong>
+          </p>
+          <div class="progress mb-4" role="progressbar" style="height: 25px">
+            <div class="progress-bar bg-success" style="width: 65%">
+              65% Completado
+            </div>
+          </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover mb-4">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Propiedad</th>
+                  <th>Clase Bootstrap</th>
+                  <th>Uso Responsivo</th>
+                  <th>Descripción Técnica</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Bordes</td>
+                  <td><code>.border-*</code></td>
+                  <td><code>.border-md-*</code></td>
+                  <td>
+                    Bootstrap no tiene classed nativo; requerir CSS extra o
+                    estilos inline.
+                  </td>
+                  <td>
+                    <span class="badge bg-warning text-dark"
+                      >Personalizado</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Grilla</td>
+                  <td><code>.col-md-8</code></td>
+                  <td><code>.col-12</code></td>
+                  <td>
+                    Sistema de 12 columnas. Ideal para anchos proporcionales
+                    (ej: 8 y 4).
+                  </td>
+                  <td><span class="badge bg-success">Nativo</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Visibilidad</td>
+                  <td><code>.d-none</code></td>
+                  <td><code>.d-lg-block</code></td>
+                  <td>
+                    Oculta o muestra elementos según el breakpoint (xs, sm, md,
+                    lg, xl).
+                  </td>
+                  <td><span class="badge bg-success">Nativo</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Tablas</td>
+                  <td><code>.table-responsive</code></td>
+                  <td>Automático</td>
+                  <td>
+                    Permite scroll horizontal en pantallas pequeñas para no
+                    romper el layout.
+                  </td>
+                  <td><span class="badge bg-info">Especifico</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           </div>
         </section>
       </div>
